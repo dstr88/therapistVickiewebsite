@@ -1,0 +1,59 @@
+---
+import BlueCross from './images/insurance/blue-cross.png';
+import BlueCare from './images/insurance/blueCare.png';
+import Cash from './images/insurance/cash.png';
+import Fsa from './images/insurance/fsa.png';
+import Hsa from './images/insurance/hsa.png';
+import Optum from './images/insurance/optum.png';
+import Uhc from './images/insurance/uhc.png';
+import Umr from './images/insurance/umr.jpeg';
+import United from './images/insurance/united.png';
+---
+
+<div class='container'>
+    <div class='zone bluecross'><img src={BlueCross}/>
+    </div>
+    <div class='zone bluecare'><img src={BlueCare}/>
+    </div>
+    <div class='zone cash'><img src={Cash}/>
+    </div>
+    <div class='zone fsa'><img src={Fsa}/>
+    </div>
+    <div class='zone hsa'><img src={Hsa}/>
+    </div>
+    <div class='zone optum'><img src={Optum}/>
+    </div>
+    <div class='zone uhc'><img src={Uhc}/>
+    </div>
+    <div class='zone umr'><img src={Umr}/>
+    </div>
+    <div class='zone united'><img src={United}/>
+    </div>
+</div>
+
+<style>
+    
+    .container{
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: .5rem;
+    }
+    
+    
+    .zone{
+        cursor: pointer;
+       /* display: inline-block;  */
+        text-align: center;
+        font-size:10em;
+        border-radius:4px;
+        border:1px solid #bbb;
+        transition: all 9.3s linear;
+        algn-items: stretch;
+    }
+    .zone:hover {
+        -webkit-box-shadow: rgba(o,o,o,o.8) opx 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+        -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+        -0-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+ </style>

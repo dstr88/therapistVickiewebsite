@@ -1,24 +1,26 @@
 ---
-export interface Props {
-	title: string;
-}
+import Navbar from '../components/navbar.astro';
+import BaseHead from '../components/head/headbase.astro';
 
-const { title } = Astro.props;
+const {content} = Astro.props;
 ---
+<html>
+  <head>
+  </BaseHead>
+  </head>
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <body>
+    <Navbar />
+    <main class="py-12 lg:py-20">
+      
+        <slot />
+    </main>
+  </body>
 </html>
+
+
+
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;

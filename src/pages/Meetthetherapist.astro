@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+//import Navbar from '../components/navbar.astro';
+import VickiePhoto from '../components/images/certificates/vickiepicture.jpeg';
+import  Art1  from '../components/images/certificates/art_advanced_certificatethumbnail.jpeg';
+import  Art1View  from '../components/images/certificates/art_advanced_certificate.jpeg';
+import Art2 from '../components/images/certificates/ART ETS Certificate_thumbnail.jpeg';
+import Art2View from '../components/images/certificates/ART ETS Certificate.jpeg';
+import Art3 from '../components/images/certificates/art_certificatethumbnail.jpeg';
+import Art3View from '../components/images/certificates/ART Certificate.jpeg';
+---
+<Layout title="The Lions lamb">
+    <div class="welcome">
+      <div class="content">
+        <img class="vickieimg" src={VickiePhoto}/>
+        <div class="text">
+          <p>"Welcome! It takes a lot of courage to do what you are doing now, whether you are here for yourself, a family member, or as a resource to help others. The truth is, the need is great. From time to time, we all need someone we can confide in. Life takes us by surprise and leaves us wishing for understanding, direction, and clarity. Perhaps you have experienced a major transition in your life. The COVID-19 pandemic has robbed us all of the security we once felt. But rest assured, I am here to walk this journey with you.</p>
+          
+          <p>Check out some of my accomplishments as a professional therapist. I have managed a community treatment center for individuals with serious and persistently mentally ill conditions, including psychosis. I have also worked closely with children, teenagers, families, groups, and individuals. My expertise extends to assisting with parenting skills, conflict management, adoption and custody issues as well as domestic violence counseling. Recently, I served as a Mandated Prescreening Agent for the state of Tennessee, providing crisis intervention in the community. I have aided police officers, served in emergency rooms, jails, schools, homes, and even through virtual platforms like Zoom. I am dedicated to making myself available wherever someone may be experiencing a mental health crisis."</p>
+          
+          <p>With thirty plus years offering therapy, I use a no-nonsense approach to provide help for the hurting and hope for the hopeless. Experience working with others has shown that our problems are as complex as we are. I will work hard to help isolate the problems, then explore tools together with my client that will put their issues in the past, allowing them to move on with life. As a native of Sevier county, I am more than qualified to help the residents of East Tennessee overcome. I have provided my clients with the tools to overcome fear, inferiority, isolation, anxiety and stress in a multitude of settings. As Americans, we recognize the right to the pursuit of happiness. The Bible, the most trusted book of all time, states that It was written so that our joy would be full. The journey may be long or short, but I am committed to travel the road with my client. I will provide support and guidance to help them work hard, get better, change behavior or cope. My client and I will partner to achieve success as they define it. I also provide Group therapy, which offers the tools that some people need for success. Many clients find a warm, friendly group of people who are struggling with the same issues as they are to be a way to team with others to find success. Give me a call for more information or to see if group therapy is right for you.</p>
+        </div>
+      </div>
+      
+      <!-- Add icon bar -->
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        <a href={Art1View}><img src={Art1}/></a>
+        <a href={Art2View}><img src={Art2}></a>
+        <a href={Art3View}><img src={Art3}></a>
+      </div>
+    </div>      
+  </Layout>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #644033, #8E6550, #B8896E, #DDB8A0);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+  
+    .welcome {
+      margin: 2em 0;
+      padding: 2em;
+      box-shadow: 0 0 2rem -0.5rem rgba(204, 85, 0, 1);
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .vickieimg {
+      width: 400px;
+      shape-outside: circle(50%);
+      border-radius: 50%;
+      margin-right: 3rem;
+
+    }
+  
+    .text {
+      flex: 1;
+    }
+  
+    .icon-bar {
+      width: 90px;
+      background-color: #555;
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+    }
+  
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+    }
+  
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+  
+    .active {
+      background-color: #04AA6D;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .cert {
+      display: inline-block;
+      margin: 1rem;
+    }
+  
+    li a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333333;
+      overflow: auto;
+    }
+  </style>
+  
+  
+  
