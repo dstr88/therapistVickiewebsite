@@ -2,156 +2,190 @@
 import Layout from '../layouts/Layout.astro';
 import LambLogo from '../components/images/logo/vickiesupdatedlogo350.png';
 import Vickie from '../components/images/home/vickievideo.mp4';
-import Card from '../components/Card.astro';
-import close from "../components/images/home/kabita-darlami-iArVfiNwdQ0-unsplash.jpeg";
-import sisters from "../components/images/home/obie-fernandez-0GFNAelMPZA-unsplash copy 2.jpeg";
-import friendsWithABaby from "../components/images/home/stockgroupfoto.jpeg";
-import tailwindConfig from "../../tailwind.config.cjs";
+import Carousel from '../components/carousel2.astro'
 ---
-<Layout title="The Lions lamb">
-      <div class="video-container">
-        <video controls>
-          <source src={Vickie} type="video/mp4">
-        </video>
-      </div>
-    <div class="zone grid-wrapper">
-        <div class="box zone">
-           <p>Exhausted from decisions hastily made.
-              Spent from trying to make the grade.
-              Defeated by callous indifference.
-              Life just doesn’t make sense.
-              Flat on our backs gasping for air.
-              Wondering, is there hope anywhere?
-              Hurt and hiding afraid to let anyone see.
-              Oh, God is there any hope for me?
-              Listening and looking to heaven above.
-              Flat on our backs, it doesn’t take much.
-              Where can I find even a breath of hope?
-              This is the place, our choice is to die or grow.
-              We are Covered with unconditional love.
-              God, loves us no matter what we’ve done.
-              Looking for forgiveness, acceptance and hope.
-              To Him, our savior the place we need to go.
-              We look to the mountains for our help.
-              We look for someone to help us get well.
-              Everyone is welcome here in this place!
-              Hurting and healing are encouraged and safe!
-           </p>
-        </div>
-        <div class="box zone">
-           <h1>here's a thirteen minute video where a colleague tells her experience with ART</h1>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/oXhOts-IjxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-        </div>
-        <div class="box zone">
-           <div id="animation-carousel" class="relative w-full" data-carousel="static">
-              <!-- Carousel wrapper -->
-              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                 <!-- Item 1 -->
-                 <div class="ease-linear" data-carousel-item>
-                    <img src={ close } class="object-cover absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                 </div>
-                 <!-- Item 2 -->
-                 <div class="ease-linear" data-carousel-item>
-                    <img src={ sisters } class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                 </div>
-                 <!-- Item 3 -->
-                 <div class="ease-linear" data-carousel-item="active">
-                    <img src= { friendsWithABaby } class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                 </div>
-              </div>
-              <!-- Slider controls -->
-              <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                 </span>
-              </button>
-              <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                 </span>
-              </button>
-           </div>
-        </div>
-        <div class="box zone">
-           <h2>Counseling with care</h2>
-           <p>From time to time we all need someone in whom we can confide. Life takes us by suprise, and leaves us wishing that we understood, had direction or could make sense of it all. Maybe you have had a major transition in your life. Covid and inflation have robbed us all of the security that we once felt. I am qualified to walk the journey with you, no matter what life has thrown your direction. I have worked closely with children of all ages, teens, families, groups, and individuals. I have experience helping with parenting skills, conflict management, and domestic violence counseling. I have partnered with a community treatment center to treat people with serious and persistent mental illness and psychosis. Most recently, I served as a Mandated Pre-screening Agent for the state of Tennessee offering crisis intervention in the community. I have aided police officers and served in emergency rooms, jails, schools, and homes. I have made myself available, via zoom, for any other location where someone may have a mental health crisis. Today is your day to reach out for help.</p>
-        </div>
-        <div class="box zone">
-           <p>Here is an hour and a half video that gives a deep dive into Art therapy.</p>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/XZQbo2aoQmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="box zone"><img class='vlogo'; src={ LambLogo }/> </div>
-     </div>
-     </Layout>
-     <footer class="zone yellow">made</footer>
-  
-  <style>
-    body {
-    height: 100%;
-   margin: 0;
-   padding: 0;
-   background: linear-gradient(to bottom, #644033, #8E6550, #B8896E, #DDB8A0);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size:x-large;
-   }
-   .video-container {
-      margin-top: 0;
-      max-height: 80%svh;
-    }
-   .zone {
-   margin-top: 2rem;
- 
-   padding: 2rem;
-   color: black;
-   }
-   .box {
-  
-   padding: 2rem;
-   margin-bottom: 2rem;
-   } 
-   .vlogo{
-   display: flex;
-   align-item: center;	
-   }
-   .zone:hover {
-   -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-   -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-   -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-   box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-   }
-   /***********************************************************************
-   *  Cover
-   **********************************************************************/
-   .container {
-   height: auto;
-   grid-column: 1/-1;
-   }
-   .grid-wrapper {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 20px;
-   }
-   @media (max-width: 768px) {
-   .grid-container {
-   grid-template-columns: 1fr;
-   }
-   }
-   /***********************************************************************
-   *  Footer
-   **********************************************************************/
-   footer {
-   margin-top: 2rem;
-   background-color: yellow;
-   padding: 2rem;
-   text-align: center;
-   }
 
-  </style>
-  
-  
+<Layout>
+  <div class="video-container">
+    <video controls>
+      <source src={Vickie} type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="zone">
+    <div class="box">
+      <p>
+        Exhausted from decisions hastily made.
+        Spent from trying to make the grade.
+        Defeated by callous indifference.
+        Life just doesn’t make sense.
+        Flat on our backs gasping for air.
+        Wondering, is there hope anywhere?
+        Hurt and hiding afraid to let anyone see.
+        Oh, God is there any hope for me?
+        Listening and looking to heaven above.
+        Flat on our backs, it doesn’t take much.
+        Where can I find even a breath of hope?
+        This is the place, our choice is to die or grow.
+        We are Covered with unconditional love.
+        God, loves us no matter what we’ve done.
+        Looking for forgiveness, acceptance and hope.
+        To Him, our savior the place we need to go.
+        We look to the mountains for our help.
+        We look for someone to help us get well.
+        Everyone is welcome here in this place!
+        Hurting and healing are encouraged and safe!
+      </p>
+    </div>
+
+    <div class="box">
+      <img src={LambLogo} class="vlogo" alt="Lamb Logo" />
+      <h2>Counseling with care</h2>
+      <p>
+        From time to time, we all need someone in whom we can confide. Life takes us by surprise, and leaves us
+        wishing that we understood, had direction, or could make sense of it all. Maybe you have had a major
+        transition in your life. Covid and inflation have robbed us all of the security that we once felt. I am
+        qualified to walk the journey with you, no matter what life has thrown your direction. I have worked
+        closely with children of all ages, teens, families, groups, and individuals. I have experience helping
+        with parenting skills, conflict management, and domestic violence counseling. I have partnered with a
+        community treatment center to treat people with serious and persistent mental illness and psychosis.
+        Most recently, I served as a Mandated Pre-screening Agent for the state of Tennessee, offering crisis
+        intervention in the community. I have aided police officers and served in emergency rooms, jails,
+        schools, and homes. I have made myself available, via zoom, for any other location where someone may
+        have a mental health crisis. Today is your day to reach out for help.
+      </p>
+    </div>
+
+    <div class="box">
+      <h1>Here's a thirteen-minute video where a colleague tells her experience with ART</h1>
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/oXhOts-IjxI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="box">
+      <h2>Expressive art therapy</h2>
+      <p>
+        Expressive art therapy combines psychology and the creative process to promote emotional growth and
+        healing. This multi-arts, or intermodal, approach to therapy uses our innate desire to create—expressive
+        arts therapy uses various art forms (e.g., visual art, dance, music, poetry) to help individuals
+        communicate, explore emotions, and address personal issues.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Family and group therapy</h2>
+      <p>
+        Family therapy is a type of psychological counseling that helps family members improve communication and
+        resolve conflicts. Family therapy is often short term. It may include all family members or just those
+        able or willing to participate. Your specific treatment plan will depend on your family's situation.
+        Family therapy sessions can teach you skills to deepen family connections and get through stressful
+        times, even after you're done going to therapy sessions.
+      </p>
+    </div>
+
+    <div class="box">
+      <p>Here is an hour and a half video that gives a deep dive into Art therapy.</p>
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/XZQbo2aoQmg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="box">
+      <h2>Individual therapy</h2>
+      <p>
+        Individual therapy (sometimes called “psychotherapy” or “counseling”) is a process through which clients
+        work one-on-one with a trained therapist—in a safe, caring, and confidential environment—to explore their
+        feelings, beliefs, or behaviors, work through challenging or influential memories, identify aspects of their
+        lives that they would like to change, better understand themselves and others, set personal goals, and work
+        toward desired change.
+      </p>
+    </div>
+    <div class="carousel">
+      <Carousel />
+    </div>
+  </div>
+</Layout>
+
+<style>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #644033, #8E6550, #B8896E, #DDB8A0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .video-container {
+    margin: 1rem 0;
+  }
+
+  .zone {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .box {
+    padding: 1.5rem;
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .carousel {
+    margin-right: 2rem;
+  }
+
+  .vlogo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  /* Two columns layout for medium screens */
+  @media screen and (min-width: 768px) {
+    .zone {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* One column layout for small screens */
+  @media screen and (max-width: 576px) {
+    .zone {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+</style>

@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LambLogo from '../components/images/logo/vickiesupdatedlogo350.png';
+import Vickie from '../components/images/home/vickievideo.mp4';
+import Carousel from '../components/carousel.astro'
+---
+<Layout>
+  <div class="video-container">
+    <video controls>
+      <source src={Vickie} type="video/mp4">
+    </video>
+  </div>
+  <div class="zone">
+   <div class="box zone">
+      <p>Exhausted from decisions hastily made.
+         Spent from trying to make the grade.
+         Defeated by callous indifference.
+         Life just doesn’t make sense.
+         Flat on our backs gasping for air.
+         Wondering, is there hope anywhere?
+         Hurt and hiding afraid to let anyone see.
+         Oh, God is there any hope for me?
+         Listening and looking to heaven above.
+         Flat on our backs, it doesn’t take much.
+         Where can I find even a breath of hope?
+         This is the place, our choice is to die or grow.
+         We are Covered with unconditional love.
+         God, loves us no matter what we’ve done.
+         Looking for forgiveness, acceptance and hope.
+         To Him, our savior the place we need to go.
+         We look to the mountains for our help.
+         We look for someone to help us get well.
+         Everyone is welcome here in this place!
+         Hurting and healing are encouraged and safe!
+      </p>
+   </div>
+
+   <div class="box">
+      <img src={LambLogo} class="vlogo">
+      <h2>Counseling with care</h2>
+      <p>From time to time, we all need someone in whom we can confide. Life takes us by surprise, and leaves us wishing that we understood, had direction, or could make sense of it all. Maybe you have had a major transition in your life. Covid and inflation have robbed us all of the security that we once felt. I am qualified to walk the journey with you, no matter what life has thrown your direction. I have worked closely with children of all ages, teens, families, groups, and individuals. I have experience helping with parenting skills, conflict management, and domestic violence counseling. I have partnered with a community treatment center to treat people with serious and persistent mental illness and psychosis. Most recently, I served as a Mandated Pre-screening Agent for the state of Tennessee, offering crisis intervention in the community. I have aided police officers and served in emergency rooms, jails, schools, and homes. I have made myself available, via zoom, for any other location where someone may have a mental health crisis. Today is your day to reach out for help.</p>
+    </div>
+
+    <div class="box">
+      <br/>
+      <h1>Here's a thirteen-minute video where a colleague tells her experience with ART</h1>
+      <br/>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/oXhOts-IjxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <div class="box">
+      <h2>Expressive art therapy</h2>
+      <p>Expressive art therapy combines psychology and the creative process to promote emotional growth and healing. This multi-arts, or intermodal, approach to therapy uses our innate desire to create—expressive arts therapy uses various art forms (e.g., visual art, dance, music, poetry) to help individuals communicate, explore emotions, and address personal issues.</p>
+    </div>
+    <div class="box">
+      <h2>Family and group therapy</h2>
+      <p>Family therapy is a type of psychological counseling that helps family members improve communication and resolve conflicts. Family therapy is often short term. It may include all family members or just those able or willing to participate. Your specific treatment plan will depend on your family's situation. Family therapy sessions can teach you skills to deepen family connections and get through stressful times, even after you're done going to therapy sessions.</p>
+    </div>
+    <div class="box">
+      <p>Here is an hour and a half video that gives a deep dive into Art therapy.</p>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/XZQbo2aoQmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="box">
+      <h2>Individual therapy</h2>
+      <p>Individual therapy (sometimes called “psychotherapy” or “counseling”) is a process through which clients work one-on-one with a trained therapist—in a safe, caring, and confidential environment—to explore their feelings, beliefs, or behaviors, work through challenging or influential memories, identify aspects of their lives that they would like to change, better understand themselves and others, set personal goals, and work toward desired change.</p>
+    </div>
+    
+  </div>
+</Layout>
+
+<style>
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  background: linear-gradient(to bottom, #644033, #8E6550, #B8896E, #DDB8A0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+
+.video-container {
+  margin: 1rem 0;
+  
+}
+
+.zone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.box {
+  padding: 1.5rem;
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+} 
+
+.box:nth-child(odd) {
+  order: 1;
+}
+
+.box:nth-child(even) {
+  order: 2;
+}
+
+.vlogo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-right:1rem;
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: antiquewhite;
+}
+
+/* Two columns layout for large screens */
+@media screen and (min-width: 768px) {
+  .box {
+    width: calc(50% - 1rem);
+  }
+
+  .box:nth-child(odd) {
+    order: unset;
+  }
+
+  .box:nth-child(even) {
+    order: unset;
+  }
+}
+
+</style>
+
+
+  
