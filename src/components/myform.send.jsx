@@ -1,0 +1,50 @@
+import LLlogo from './src/components/images/logo/vickiesupdatedlogo350.png';
+//import Th from 'src/components/images/logo/thlogo.png';
+
+function MyComponent() {
+  return (
+    <>
+      <img src={LLlogo} alt="LL Logo" />
+      {/* plus sign */}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 11H13V5h-2v6H5v2h6v6h2v-6h6z" />
+      </svg>
+
+      <img src={ Th } alt="ThLogo" />
+      {/* equals sign */}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M4 11h16v2H4z" />
+      </svg>
+
+      Success
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-11.59L7.41 12 9 13.59 14.59 8 16 9.41 9.41 16 7 13.59z" />
+      </svg>
+
+      Dear [Client's Name],
+
+      Thank you for partnering with us to help your business grow. We are excited to share some great news with you. As a result of our partnership, [Patient Name] has submitted their information on your website.
+
+      Your new patient's details are as follows:
+      Patient Name: [Patient Name]
+      Phone: [Phone]
+      Email: [Email]
+      Date of Birth: [DOB]
+      Parent Name: [Guardian]
+      Note: [Note]
+
+      We would like to express our gratitude for choosing our services and entrusting us with your business. We value the opportunity to work with you and look forward to achieving further success together.
+
+      If available, please provide us with [Parent Name]'s information to ensure we have all the necessary details for our records.
+
+      Thank you again for your continued support. Should you have any questions or require further assistance, please don't hesitate to reach out.
+
+      Sincerely,
+      [Your Name]
+      [Your Company Name]
+    </>
+  );
+}
+
+export default MyComponent;
